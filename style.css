@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(35, 36, 40);
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  min-height: 80vh;
+  width: 80%;
+}
+
+.sidebar {
+  background-color: rgb(27, 27, 29);
+  color: white;
+  padding: 0.5rem;
+
+  border-radius: 0.5rem;
+}
+
+.sidebar .nav-items {
+  display: flex;
+  flex-direction: column;
+  min-height: 90%;
+}
+
+.sidebar .nav-title {
+  margin-bottom: 1rem;
+}
+
+.sidebar .nav-items li {
+  list-style-type: none;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+
+  cursor: pointer;
+}
+
+.sidebar .nav-items > li:first-child {
+  background-color: rgb(247, 1, 208);
+}
+
+.nav-items > li:hover {
+  background-color: rgb(40, 41, 43);
+}
+
+.sidebar .nav-items li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content-div {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.profile {
+  background-color: rgb(27, 27, 29);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+
+  display: flex;
+  gap: 1rem;
+}
+
+.profile .img-wrapper {
+  width: 35px;
+  height: 35px;
+}
+
+.profile .img-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.welcome-tab {
+  background-color: rgb(27, 27, 29);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.nav-items > li:hover > .nav-child-items {
+  background-color: rgb(27, 27, 29) !important;
+}
+
+.nav-child-items li {
+  background-color: transparent !important;
+}
+
+.content-div .profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items > li:last-child {
+  margin-top: auto;
+}
+
+.welcome-tab .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.welcome-tab .title {
+  margin-bottom: 0.5rem;
+}
+
+.welcome-tab .header .tabs {
+  display: flex;
+  gap: 1rem;
+}
+
+.welcome-tab .header .tabs small {
+  background-color: rgb(40, 41, 43);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem 0.2rem;
+  border-radius: 0.1rem;
+}
+
+.welcome-tab .filters {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.welcome-tab .filters small {
+  background-color: rgb(40, 41, 43);
+  padding: 0.3rem 0.2rem;
+  border-radius: 0.2rem;
+}
+
+.welcome-tab .filters select {
+  background-color: rgb(40, 41, 43);
+  color: #fff;
+  padding: 0.3rem 0.2rem;
+  border-radius: 0.1rem;
+  border: none;
+}
+
+.welcome-tab .filters #date:focus {
+  border: none;
+  outline: none;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats-container .left-container,
+.stats-container .right-container {
+  background-color: rgb(39, 41, 42);
+  min-width: 48%;
+  padding: 0.3rem 0.2rem;
+  border-radius: 0.2rem;
+}
+
+.stats-container .left-container .data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.stats-container .left-container .data .wrapper {
+  background-color: rgb(52, 53, 55);
+  width: 100%;
+  padding: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats-container .left-container .data .wrapper .numbers-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats-container .left-container .stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem;
+
+  background-color: rgb(52, 53, 55);
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.stats-container .left-container .data .percentage {
+  background-color: rgb(11, 216, 71);
+  color: #d6d6d6;
+  border-radius: 1rem;
+  padding: 0.1rem 0.5rem;
+  display: inline-block;
+  text-align: center;
+}

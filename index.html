@@ -6,164 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard UI</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Poppins", Arial, Helvetica, sans-serif;
-        }
-
-        html,
-        body {
-            height: 100%;
-            width: 100%;
-        }
-
-        .container {
-            width: 90%;
-            margin: 0 auto;
-        }
-
-        #main-section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: rgb(35, 36, 40);
-        }
-
-        .content-wrapper {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 1rem;
-            min-height: 80vh;
-            width: 80%;
-        }
-
-        .sidebar {
-            background-color: rgb(27, 27, 29);
-            color: white;
-            padding: 0.5rem;
-
-            border-radius: 0.5rem;
-        }
-
-        .sidebar .nav-items {
-            display: flex;
-            flex-direction: column;
-            min-height: 90%;
-        }
-
-        .sidebar .nav-title {
-            margin-bottom: 1rem;
-        }
-
-        .sidebar .nav-items li {
-            list-style-type: none;
-            padding: 0.3rem 0.5rem;
-            border-radius: 0.5rem;
-            margin-bottom: 0.5rem;
-
-            cursor: pointer;
-        }
-
-        .sidebar .nav-items>li:first-child {
-            background-color: rgb(247, 1, 208);
-        }
-
-        .nav-items>li:hover {
-            background-color: rgb(40, 41, 43);
-        }
-
-        .sidebar .nav-items li a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .content-div {
-            gap: 1rem;
-            display: flex;
-            flex-direction: column;
-            padding: 0.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .profile {
-            background-color: rgb(27, 27, 29);
-            color: #fff;
-            padding: 0.5rem;
-            border-radius: 0.5rem;
-
-            display: flex;
-            gap: 1rem;
-        }
-
-        .profile .img-wrapper {
-            width: 40px;
-            height: 40px;
-        }
-
-        .profile .img-wrapper img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-
-            border-radius: 50%;
-            cursor: pointer;
-        }
-
-        .welcome-tab {
-            background-color: rgb(27, 27, 29);
-            color: #fff;
-            padding: 0.5rem;
-            border-radius: 0.5rem;
-        }
-
-
-        .nav-items>li:hover>.nav-child-items {
-            background-color: rgb(27, 27, 29) !important;
-        }
-
-        .nav-child-items li {
-            background-color: transparent !important;
-        }
-
-        .content-div .profile {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-items>li:last-child {
-            margin-top: auto;
-        }
-
-        .welcome-tab .header {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .welcome-tab .header .tabs {
-            display: flex;
-            gap: 1rem;
-        }
-
-        .welcome-tab .header .tabs small {
-            background-color: rgb(40, 41, 43);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0.1rem;
-            border-radius: 0.5rem;
-        }
-
-
-
-
-    </style>
 </head>
 
 <body>
@@ -208,9 +50,42 @@
                         </div>
                         <div class="filters">
                             <select id="date">
-                                <option value="">Feb 20 - Feb 27</option>
+                                <option value="#">Feb 20 - Feb 27</option>
                             </select>
                             <small>Filter</small>
+                        </div>
+                    </div>
+
+                    <div class="stats-container">
+                        <div class="left-container">
+                            <div class="data">
+                                <div class="wrapper">
+                                    <div class="numbers-wrapper">
+                                        <h2 class="data">763</h2>
+                                        <box-icon type='solid' name='up-arrow-circle'
+                                            color="rgb(11, 216, 71)"></box-icon>
+                                    </div>
+                                    <div class="percentage">+12%</div>
+                                </div>
+                            </div>
+                            <div class="stats">
+                                <small>Referall traffic</small>
+                            </div>
+                        </div>
+                        <div class="left-container">
+                            <div class="data">
+                                <div class="wrapper">
+                                    <div class="numbers-wrapper">
+                                        <h2 class="data">320</h2>
+                                        <box-icon type='solid' name='down-arrow-circle'
+                                            color="rgb(222, 109, 29)"></box-icon>
+                                    </div>
+                                    <div class="percentage">-4%</div>
+                                </div>
+                            </div>
+                            <div class="stats">
+                                <small>Pending</small>
+                            </div>
                         </div>
                     </div>
                 </div>
